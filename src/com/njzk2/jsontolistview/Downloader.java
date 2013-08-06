@@ -42,7 +42,7 @@ public class Downloader extends AsyncTask<String, Void, JSONArray> {
 			for (int i = 0; i < images.length(); i++) {
 				JSONObject object = images.optJSONObject(i);
 				if (object != null) {
-					mAdapter.add(object.optString("title"));
+					mAdapter.add(object.optString("description"));
 				}
 			}
 		}
